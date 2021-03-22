@@ -1,0 +1,59 @@
+
+ul{
+    list-style: none;
+}
+
+#texto-div{
+
+    grid-area: t;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 64px 0 0 60px;
+
+    margin-right: 90px;
+}
+
+h1{
+    margin-bottom: 52px;
+
+    font-size: 28px;
+
+    padding-top: 5px;
+}
+
+ul{
+    font-size: 15px;
+}
+
+li{
+    margin-bottom: 18px;
+
+    line-height: 28px;
+
+    font-weight: 300;
+
+}
+
+b{
+    font-weight: bolder;
+}
+
+li, svg{
+    display: inline-block;
+}
+
+#link-div-texto{
+    display: none;
+}
+
+@media (max-width: 777px){
+    ul{
+        padding: 5px;
+    }
+
+    #link-div-texto{
+        display: block;
+    }
+}

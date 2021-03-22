@@ -1,0 +1,55 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+:root{
+  --verde: #00bfa5;
+}
+
+header{
+  height: 225px;
+  width: 100%;
+
+  padding-top: 27px;
+
+  background-color: var(--verde);
+
+  z-index: -1;
+
+}
+
+
+#icon-div{
+  display: flex;
+  align-items: center;
+
+  padding-left: 37px;
+}
+
+#whatsapp-icon{
+  width: 40px;
+  height: 40px;
+}
+
+#text-whats-icon{
+  width: 1050px;
+
+  margin-left: 14px;
+
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  color: rgba(255,255,255);
+}
+
+@media (min-width: 510px){
+  #icon-div{
+    justify-content: center;
+    justify-items: center;
+  }
+}

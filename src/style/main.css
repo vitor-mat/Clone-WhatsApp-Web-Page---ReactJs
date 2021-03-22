@@ -1,0 +1,71 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
+  font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+  background-color: rgba(0,0,0,.2);
+}
+
+/*
+t - tutorial.js
+q - qrcode.js
+li - link e input
+tv - tutorial_video.js
+*/
+
+#container{
+  max-width: 1000px;
+  width: 92%;
+  height: 926px;
+  
+  background-color: white;
+
+  margin: -85px auto 97px;
+
+  box-shadow: 0px 8px 26px -7px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 8px 26px -7px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 8px 26px -7px rgba(0,0,0,0.75);
+  
+  display: grid;
+  grid-template-rows:37% 14% 49%;
+  grid-template-columns: 65% 35%;
+
+  grid-template-areas: 
+  "t q"
+  "li li"
+  "tv tv";
+}
+
+@media (max-width: 660px){
+  #container{
+    width: 100%;
+
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 777px){
+  #container{
+    height: 1100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/*
+@media (max-width: 796px){
+  #container{
+    grid-template-rows: 40% 16% 49%;
+  }
+}
+*/
